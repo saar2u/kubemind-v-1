@@ -1,0 +1,39 @@
+# --- Core Server ---
+fastapi==0.110.0
+uvicorn==0.27.1
+python-multipart==0.0.6
+requests
+
+# --- AI & Database ---
+google-generativeai==0.4.0
+google-cloud-firestore
+SQLAlchemy==2.0.25
+psycopg2-binary==2.9.9
+
+# --- AWS SDKs ---
+boto3==1.34.0
+botocore
+s3transfer
+
+# --- GCP SDKs ---
+google-cloud-storage==2.14.0
+google-cloud-bigquery==3.15.0
+google-cloud-compute
+google-cloud-resource-manager
+google-auth
+
+# --- Azure SDKs ---
+azure-identity==1.15.0
+azure-mgmt-compute==30.0.0
+azure-mgmt-storage==21.0.0
+azure-mgmt-resource
+azure-storage-blob
+
+# --- Data & Automation ---
+pandas==2.2.0
+numpy
+pyarrow
+paramiko
+scp
+# We removed apache-airflow to fix the build. 
+# The agent can still trigger pipelines via standard HTTP requests.
