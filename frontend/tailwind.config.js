@@ -7,6 +7,18 @@ export default {
   theme: {
     extend: {
       colors: {
+        // --- PRESERVED COLORS ---
+        'primary': '#00D4FF',
+        'secondary': '#8B5CF6',
+        'text-heading': '#0F172A',
+        'text-body': '#475569',
+        'kubemind-cyan': {
+          400: '#22D3EE',
+          500: '#06B6D4',
+          600: '#0891B2',
+        },
+
+        // --- NEW UPDATED COLOR MAPS ---
         'kubemind-purple': {
           50: '#f0f5ff',
           100: '#e0e7ff',
@@ -70,6 +82,16 @@ export default {
         'info': {
           500: '#3b82f6',
           600: '#2563eb',
+        },
+      },
+      // --- PRESERVED ANIMATIONS ---
+      animation: {
+        'shimmer': 'shimmer 2s linear infinite',
+      },
+      keyframes: {
+        shimmer: {
+          '0%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(100%)' },
         },
       },
     },
